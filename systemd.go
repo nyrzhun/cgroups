@@ -37,7 +37,7 @@ var (
 )
 
 func Systemd() ([]Subsystem, error) {
-	root, err := v1MountPoint()
+	root, err := V1MountPoint()
 	if err != nil {
 		return nil, err
 	}
