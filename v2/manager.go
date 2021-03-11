@@ -27,7 +27,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/containerd/cgroups/v2/stats"
+	"github.com/cloudlinux/cgroups/v2/stats"
 	systemdDbus "github.com/coreos/go-systemd/v22/dbus"
 	"github.com/godbus/dbus/v5"
 	"github.com/opencontainers/runtime-spec/specs-go"

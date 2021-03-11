@@ -24,7 +24,7 @@ import (
 	"strings"
 	"sync"
 
-	v1 "github.com/containerd/cgroups/stats/v1"
+	v1 "github.com/cloudlinux/cgroups/stats/v1"
 	specs "github.com/opencontainers/runtime-spec/specs-go"
 	"github.com/pkg/errors"
 )
