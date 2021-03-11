@@ -35,7 +35,7 @@ func TestStaticPath(t *testing.T) {
 }
 
 func TestSelfPath(t *testing.T) {
-	_, err := v1MountPoint()
+	_, err := V1MountPoint()
 	if err == ErrMountPointNotExist {
 		t.Skip("skipping test that requires cgroup hierarchy")
 	} else if err != nil {
@@ -57,7 +57,7 @@ func TestSelfPath(t *testing.T) {
 }
 
 func TestPidPath(t *testing.T) {
-	_, err := v1MountPoint()
+	_, err := V1MountPoint()
 	if err == ErrMountPointNotExist {
 		t.Skip("skipping test that requires cgroup hierarchy")
 	} else if err != nil {
