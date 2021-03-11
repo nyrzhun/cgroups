@@ -26,7 +26,7 @@ import (
 
 // V1 returns all the groups in the default cgroups mountpoint in a single hierarchy
 func V1() ([]Subsystem, error) {
-	root, err := v1MountPoint()
+	root, err := V1MountPoint()
 	if err != nil {
 		return nil, err
 	}
@@ -44,9 +44,9 @@ func V1() ([]Subsystem, error) {
 	return enabled, nil
 }
 
-// v1MountPoint returns the mount point where the cgroup
+// V1MountPoint returns the mount point where the cgroup
 // mountpoints are mounted in a single hiearchy
-func v1MountPoint() (string, error) {
+func V1MountPoint() (string, error) {
 	f, err := os.Open("/proc/self/mountinfo")
 	if err != nil {
 		return "", err
